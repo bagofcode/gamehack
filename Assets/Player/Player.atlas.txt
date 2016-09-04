@@ -1,0 +1,48 @@
+
+Player.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Head
+  rotate: false
+  xy: 2, 225
+  size: 313, 264
+  orig: 313, 264
+  offset: 0, 0
+  index: -1
+Left hand
+  rotate: false
+  xy: 2, 2
+  size: 109, 69
+  orig: 109, 69
+  offset: 0, 0
+  index: -1
+Left shoe
+  rotate: false
+  xy: 317, 379
+  size: 131, 110
+  orig: 131, 110
+  offset: 0, 0
+  index: -1
+Right hand
+  rotate: false
+  xy: 113, 2
+  size: 109, 69
+  orig: 109, 69
+  offset: 0, 0
+  index: -1
+Right shoe
+  rotate: false
+  xy: 317, 267
+  size: 131, 110
+  orig: 131, 110
+  offset: 0, 0
+  index: -1
+Torso
+  rotate: true
+  xy: 2, 73
+  size: 150, 373
+  orig: 150, 373
+  offset: 0, 0
+  index: -1
