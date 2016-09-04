@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using Spine.Unity;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
@@ -15,12 +16,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool goingRight;
     private float nextFireTime;
+    private SkeletonAnimation skeletonAnimation;
 
     void Awake()
     {
         this.groundLayer = LayerMask.GetMask("Ground");
         this.rb = GetComponent<Rigidbody2D>();
         this.shootingController = this.GetComponent<ShootingController>();
+        this.skeletonAnimation = this.GetComponentInChildren<SkeletonAnimation>();
         goingRight = true;
     }
 
@@ -74,11 +77,14 @@ public class PlayerController : MonoBehaviour
 
     void Walk(float direction)
     {
-        if (direction != 0)
+        if (direction == 0)
         {
+            this.skeletonAnimation.AnimationName = "idle";
+        } else {
             var velocity = this.rb.velocity;
             velocity.x = walkSpeed * direction;
             this.rb.velocity = velocity;
+            this.skeletonAnimation.AnimationName = "run";
         }
 
         var currentScale = this.transform.localScale;
