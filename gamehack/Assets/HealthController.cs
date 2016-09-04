@@ -12,14 +12,18 @@ public class HealthController : MonoBehaviour
         DisplayHealth();
     }
 
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         DisplayHealth();
+        if (health <= 0)
+        {
+            this.gameObject.SendMessage("OnDeath");
+        }
     }
 
     void DisplayHealth()
     {
-        healthDisplay.text = "HP: 10";
+        healthDisplay.text = "HP: " + health;
     }
 }

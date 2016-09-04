@@ -75,12 +75,20 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    void OnDeath()
+    {
+        this.rb.isKinematic = true;
+        //TODO: play death animation
+        Destroy(this.gameObject);
+    }
+
     void Walk(float direction)
     {
         if (direction == 0)
         {
             this.skeletonAnimation.AnimationName = "idle";
-        } else {
+        }
+        else {
             var velocity = this.rb.velocity;
             velocity.x = walkSpeed * direction;
             this.rb.velocity = velocity;
