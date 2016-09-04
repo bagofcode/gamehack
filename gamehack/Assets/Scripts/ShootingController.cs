@@ -13,5 +13,6 @@ public class ShootingController : MonoBehaviour
 
         var bulletInstance = (GameObject)Instantiate(bullet, origin.position, rotation);
         bulletInstance.GetComponent<Rigidbody2D>().velocity = direction.normalized * 20;
+        bulletInstance.GetComponent<BulletController>().ignore = this.gameObject;
     }
 }

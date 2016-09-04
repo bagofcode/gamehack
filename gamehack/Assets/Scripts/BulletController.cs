@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletController : MonoBehaviour
 {
     public float lifetime = 3.0f;
+    public GameObject ignore;
 
     private float groundLayer;
     private float expirationTime;
@@ -24,6 +25,11 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject == ignore)
+        {
+            return;
+        }
+
         bool hitSomething = false;
         if (other.gameObject.layer == groundLayer)
         {
