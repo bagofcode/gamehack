@@ -1,0 +1,22 @@
+{"skeleton":{"images":"images/"},
+"bones":[{"name":"root"}],
+"slots":[
+	{"name":"Head","bone":"root","attachment":"Head"},
+	{"name":"Left hand","bone":"root","attachment":"Left hand"},
+	{"name":"Left shoe","bone":"root","attachment":"Left shoe"},
+	{"name":"Torso","bone":"root","attachment":"Torso"},
+	{"name":"Right shoe","bone":"root","attachment":"Right shoe"},
+	{"name":"Right hand","bone":"root","attachment":"Right hand"}
+],
+"skins":{
+	"default":{
+		"Right hand":{"Right hand":{"x":654.5,"y":477.5,"width":109,"height":69}},
+		"Right shoe":{"Right shoe":{"x":590.5,"y":230,"width":131,"height":110}},
+		"Torso":{"Torso":{"x":599,"y":477.5,"width":150,"height":373}},
+		"Left shoe":{"Left shoe":{"x":612.5,"y":242,"width":131,"height":110}},
+		"Left hand":{"Left hand":{"x":672.5,"y":488.5,"width":109,"height":69}},
+		"Head":{"Head":{"x":622.5,"y":783,"width":313,"height":264}}
+	}
+},
+"animations":{"animation":{}}
+}
