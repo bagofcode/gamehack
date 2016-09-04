@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+
+        Walk(Input.GetAxis("Horizontal"));
     }
 
     void Update()
@@ -36,7 +39,6 @@ public class PlayerController : MonoBehaviour
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
         var now = Time.realtimeSinceStartup;
-        Walk(horizontal);
 
         if (Input.GetAxisRaw("Fire1") > 0 && now >= nextFireTime)
         {
@@ -60,12 +62,25 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        this.rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        var velocity = this.rb.velocity;
+        velocity.y = jumpForce;
+        this.rb.velocity = velocity;
+    }
+
+    void OnFellOff()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void Walk(float direction)
     {
-        this.transform.position += Vector3.right * (direction * walkSpeed * Time.deltaTime);
+        if (direction != 0)
+        {
+            var velocity = this.rb.velocity;
+            velocity.x = walkSpeed * direction;
+            this.rb.velocity = velocity;
+        }
+
         var currentScale = this.transform.localScale;
         if (direction > 0 && !goingRight)
         {
