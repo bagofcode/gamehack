@@ -32,9 +32,10 @@ public class AIShooterController : ShootingController
 
     void Awake()
     {
-        nextShot = Time.realtimeSinceStartup;
+        nextShot = Time.realtimeSinceStartup + shootDelay;
         rangeSqr = range*range;
         this.info.ShootDelay = shootDelay;
+        this.info.State = AIShooterState.NOT_IN_RANGE;
     }
 
     void Update()
