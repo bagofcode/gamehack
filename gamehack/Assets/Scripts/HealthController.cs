@@ -18,12 +18,15 @@ public class HealthController : MonoBehaviour
         DisplayHealth();
         if (health <= 0)
         {
-            this.gameObject.SendMessage("OnDeath");
+            this.gameObject.SendMessage("OnDeath", SendMessageOptions.RequireReceiver);
         }
     }
 
     void DisplayHealth()
     {
-        healthDisplay.text = "HP: " + health;
+        if (healthDisplay != null)
+        {
+            healthDisplay.text = "HP: " + health;
+        }
     }
 }
