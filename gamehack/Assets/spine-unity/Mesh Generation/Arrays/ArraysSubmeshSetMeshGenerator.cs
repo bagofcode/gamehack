@@ -88,7 +88,7 @@ namespace Spine.Unity.MeshGeneration {
 				}
 			}
 				
-			// For each submesh, add vertex data from attachments.
+			// For each submesh, add vertex data From attachments.
 			var workingAttachments = this.attachmentBuffer;
 			workingAttachments.Clear(false);
 			int vertexIndex = 0; // modified by FillVerts

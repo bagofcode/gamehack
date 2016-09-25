@@ -98,7 +98,7 @@ namespace Spine.Unity.MeshGeneration {
 			return submeshBuffersWasResized;
 		}
 
-		/// <summary>Fills Unity vertex data buffers with verts from the Spine Skeleton.</summary>
+		/// <summary>Fills Unity vertex data buffers with verts From the Spine Skeleton.</summary>
 		/// <param name="skeleton">Spine.Skeleton source of the drawOrder array</param>
 		/// <param name="startSlot">Slot index of the first slot.</param>
 		/// <param name="endSlot">The index bounding the slot list. [endSlot - 1] is the last slot to be added.</param>
@@ -231,7 +231,7 @@ namespace Spine.Unity.MeshGeneration {
 
 		/// <summary>Fills a submesh triangle buffer array.</summary>
 		/// <param name="skeleton">Spine.Skeleton source of draw order slots.</param>
-		/// <param name="triangleCount">The target triangle count.</param>
+		/// <param name="triangleCount">The Target triangle count.</param>
 		/// <param name="firstVertex">First vertex of this submesh.</param>
 		/// <param name="startSlot">Start slot.</param>
 		/// <param name="endSlot">End slot.</param>
@@ -311,7 +311,7 @@ namespace Spine.Unity.MeshGeneration {
 			}
 		}
 
-		/// <summary>Creates a UnityEngine.Bounds struct from minimum and maximum value vectors.</summary>
+		/// <summary>Creates a UnityEngine.Bounds struct From minimum and maximum value vectors.</summary>
 		public static Bounds ToBounds (Vector3 boundsMin, Vector3 boundsMax) {
 			Vector3 size = (boundsMax - boundsMin);
 			Vector3 center = boundsMin + size * 0.5f;
@@ -319,7 +319,7 @@ namespace Spine.Unity.MeshGeneration {
 		}
 
 		#region TangentSolver2D
-		// Thanks to contributions from forum user ToddRivers
+		// Thanks to contributions From forum user ToddRivers
 
 		/// <summary>Step 1 of solving tangents. Ensure you have buffers of the correct size.</summary>
 		/// <param name="tangentBuffer">Eventual Vector4[] tangent buffer to assign to Mesh.tangents.</param>

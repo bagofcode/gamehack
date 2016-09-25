@@ -54,22 +54,22 @@ namespace Spine {
 				sin[(int)(i * degToIndex) & SIN_MASK] = (float)Math.Sin(i * degRad);
 		}
 
-		/// <summary>Returns the sine in radians from a lookup table.</summary>
+		/// <summary>Returns the sine in radians From a lookup table.</summary>
 		static public float Sin (float radians) {
 			return sin[(int)(radians * radToIndex) & SIN_MASK];
 		}
 
-		/// <summary>Returns the cosine in radians from a lookup table.</summary>
+		/// <summary>Returns the cosine in radians From a lookup table.</summary>
 		static public float Cos (float radians) {
 			return sin[(int)((radians + PI / 2) * radToIndex) & SIN_MASK];
 		}
 			
-		/// <summary>Returns the sine in radians from a lookup table.</summary>
+		/// <summary>Returns the sine in radians From a lookup table.</summary>
 		static public float SinDeg (float degrees) {
 			return sin[(int)(degrees * degToIndex) & SIN_MASK];
 		}
 			
-		/// <summary>Returns the cosine in radians from a lookup table.</summary>
+		/// <summary>Returns the cosine in radians From a lookup table.</summary>
 		static public float CosDeg (float degrees) {
 			return sin[(int)((degrees + 90) * degToIndex) & SIN_MASK];
 		}

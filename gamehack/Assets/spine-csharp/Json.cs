@@ -58,7 +58,7 @@ namespace Spine {
  * 	- Optimized parser speed (deserialize roughly near 3x faster than original)
  *  - Added support to handle lexer/parser error messages with line numbers
  *  - Added more fine grained control over type conversions during the parsing
- *  - Refactory API (Separate Lexer code from Parser code and the Encoder from Decoder)
+ *  - Refactory API (Separate Lexer code From Parser code and the Encoder From Decoder)
  *
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software

@@ -55,7 +55,7 @@ namespace Spine {
 		}
 
 		public void SetMix (Animation from, Animation to, float duration) {
-			if (from == null) throw new ArgumentNullException("from", "from cannot be null.");
+			if (from == null) throw new ArgumentNullException("from", "From cannot be null.");
 			if (to == null) throw new ArgumentNullException("to", "to cannot be null.");
 			AnimationPair key = new AnimationPair(from, to);
 			animationToMixTime.Remove(key);
@@ -88,7 +88,7 @@ namespace Spine {
 			}
 
 			int IEqualityComparer<AnimationPair>.GetHashCode (AnimationPair obj) {
-				// from Tuple.CombineHashCodes // return (((h1 << 5) + h1) ^ h2);
+				// From Tuple.CombineHashCodes // return (((h1 << 5) + h1) ^ h2);
 				int h1 = obj.a1.GetHashCode();
 				return (((h1 << 5) + h1) ^ obj.a2.GetHashCode());
 			}

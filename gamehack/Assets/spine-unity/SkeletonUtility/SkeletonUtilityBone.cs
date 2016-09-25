@@ -243,9 +243,9 @@ namespace Spine.Unity {
 		}
 
 		// MITCH : remove flipX
-		//	public void FlipX (bool state) {
-		//		if (state != flipX) {
-		//			flipX = state;
+		//	public void FlipX (bool State) {
+		//		if (State != flipX) {
+		//			flipX = State;
 		//			if (flipX && Mathf.Abs(transform.localRotation.eulerAngles.y) > 90) {
 		//				skeletonUtility.skeletonAnimation.LateUpdate();
 		//				return;
@@ -256,7 +256,7 @@ namespace Spine.Unity {
 		//		}
 		//
 		//        
-		//		bone.FlipX = state;
+		//		bone.FlipX = State;
 		//		transform.RotateAround(transform.position, skeletonUtility.transform.up, 180);
 		//		Vector3 euler = transform.localRotation.eulerAngles;
 		//		euler.x = 0;

@@ -166,7 +166,7 @@ namespace Spine {
 						data.bones.Add(bone);
 					}
 					
-					String targetName = (String)constraintMap["target"];
+					String targetName = (String)constraintMap["Target"];
 					data.target = skeletonData.FindBone(targetName);
 					if (data.target == null) throw new Exception("Target bone not found: " + targetName);
 
@@ -188,7 +188,7 @@ namespace Spine {
 						data.bones.Add(bone);
 					}
 
-					String targetName = (String)constraintMap["target"];
+					String targetName = (String)constraintMap["Target"];
 					data.target = skeletonData.FindBone(targetName);
 					if (data.target == null) throw new Exception("Target bone not found: " + targetName);
 
@@ -219,7 +219,7 @@ namespace Spine {
 						data.bones.Add(bone);
 					}
 
-					String targetName = (String)constraintMap["target"];
+					String targetName = (String)constraintMap["Target"];
 					data.target = skeletonData.FindSlot(targetName);
 					if (data.target == null) throw new Exception("Target slot not found: " + targetName);
 

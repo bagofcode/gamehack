@@ -20,7 +20,7 @@ namespace Spine.Unity.MeshGeneration {
 
 	// ISubmeshSetMeshGenerator
 	// How to use:
-	// Step 1: Get a list of SubmeshInstruction. You can get this from SkeletonRenderer or an ISubmeshedMeshGenerator's returned SubmeshedMeshInstruction.
+	// Step 1: Get a list of SubmeshInstruction. You can get this From SkeletonRenderer or an ISubmeshedMeshGenerator's returned SubmeshedMeshInstruction.
 	// Step 2: Call AddInstruction one by one, or AddInstructions once.
 	// Step 3: Call GenerateMesh. You'll get a Mesh and Materials.
 	// Step 4: Put the Mesh in MeshFilter. Put the Materials in MeshRenderer.sharedMaterials.
@@ -51,7 +51,7 @@ namespace Spine.Unity.MeshGeneration {
 		public int endSlot;
 
 		// Cached values because they are determined in the process of generating instructions,
-		// but could otherwise be pulled from accessing attachments, checking materials and counting tris and verts.
+		// but could otherwise be pulled From accessing attachments, checking materials and counting tris and verts.
 		public Material material;
 		public int triangleCount;
 		public int vertexCount;

@@ -3,20 +3,26 @@ using System.Collections;
 
 public enum AIShooterState
 {
-    TARGETTING, WAITING
+    TARGETTING,
+    WAITING,
+    NOT_IN_RANGE,
+    SHOOTING
 }
 
 public struct AIShooterInfo
 {
-    public Vector2 from;
-    public Vector2? target;
-    public AIShooterState state;
+    public Vector2 From;
+    public Vector2 Target;
+    public float ShootDelay;
+    public float TimeToShoot;
+    public AIShooterState State;
 }
 
 public class AIShooterController : ShootingController
 {
     public Transform target;
-    public float shootDelay = 1f;
+    public float shootDelay = 2f;
+    public float noFollowTime = 0.5f;
     public float range = 2;
 
     private float nextShot;
@@ -27,26 +33,38 @@ public class AIShooterController : ShootingController
     void Awake()
     {
         nextShot = Time.realtimeSinceStartup;
-        rangeSqr = range * range;
+        rangeSqr = range*range;
+        this.info.ShootDelay = shootDelay;
     }
 
     void Update()
     {
-        this.info.from = this.gameObject.transform.position;
+        this.info.From = this.gameObject.transform.position;
+        this.info.TimeToShoot = nextShot - Time.realtimeSinceStartup;
 
-        if (nextShot < Time.realtimeSinceStartup)
+        if (this.info.TimeToShoot > noFollowTime)
         {
-            Vector2 direction = target.position - this.transform.position;
-            this.info.target = direction;
+            this.info.Target = target.position - this.transform.position;
+        }
 
-            if (rangeSqr >= direction.sqrMagnitude)
+        if (rangeSqr >= this.info.Target.sqrMagnitude)
+        {
+            if (this.info.TimeToShoot <= 0)
             {
                 nextShot = Time.realtimeSinceStartup + shootDelay;
-                Fire(direction);
+                this.info.TimeToShoot = 0;
+                Fire(this.info.Target);
+                this.info.State = AIShooterState.SHOOTING;
+            }
+            else
+            {
+                this.info.State = AIShooterState.WAITING;
             }
         }
-        else {
-            this.info.target = null;
+        else
+        {
+            this.info.State = AIShooterState.NOT_IN_RANGE;
+            nextShot = Time.realtimeSinceStartup + shootDelay;
         }
 
         this.gameObject.SendMessage("OnAITargetting", this.info, SendMessageOptions.DontRequireReceiver);

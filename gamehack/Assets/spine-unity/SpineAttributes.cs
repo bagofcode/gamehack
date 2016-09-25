@@ -22,7 +22,7 @@ namespace Spine.Unity {
 		/// <param name="startsWith">Filters popup results to elements that begin with supplied string.</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives).
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		/// <param name="containsBoundingBoxes">Disables popup results that don't contain bounding box attachments when true.</param>
 		public SpineSlot(string startsWith = "", string dataField = "", bool containsBoundingBoxes = false) {
@@ -39,7 +39,7 @@ namespace Spine.Unity {
 		/// <param name="startsWith">Filters popup results to elements that begin with supplied string.</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives).
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		public SpineEvent(string startsWith = "", string dataField = "") {
 			this.startsWith = startsWith;
@@ -54,7 +54,7 @@ namespace Spine.Unity {
 		/// <param name="startsWith">Filters popup results to elements that begin with supplied string.</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives)
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		public SpineSkin(string startsWith = "", string dataField = "") {
 			this.startsWith = startsWith;
@@ -68,7 +68,7 @@ namespace Spine.Unity {
 		/// <param name="startsWith">Filters popup results to elements that begin with supplied string.</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives)
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		public SpineAnimation(string startsWith = "", string dataField = "") {
 			this.startsWith = startsWith;
@@ -91,7 +91,7 @@ namespace Spine.Unity {
 		/// <param name="slotField">If specified, a locally scoped field with the name supplied by in slotField will be used to limit the popup results to children of a named slot</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives)
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		public SpineAttachment (bool currentSkinOnly = true, bool returnAttachmentPath = false, bool placeholdersOnly = false, string slotField = "", string dataField = "") {
 			this.currentSkinOnly = currentSkinOnly;
@@ -133,7 +133,7 @@ namespace Spine.Unity {
 					return;
 				}
 				else if (chunks.Length < 2) {
-					throw new System.Exception("Cannot generate Attachment Hierarchy from string! Not enough components! [" + fullPath + "]");
+					throw new System.Exception("Cannot generate Attachment Hierarchy From string! Not enough components! [" + fullPath + "]");
 				}
 				skin = chunks[0];
 				slot = chunks[1];
@@ -152,7 +152,7 @@ namespace Spine.Unity {
 		/// <param name="startsWith">Filters popup results to elements that begin with supplied string.</param>
 		/// <param name="dataField">If specified, a locally scoped field with the name supplied by in dataField will be used to fill the popup results.
 		/// Valid types are SkeletonDataAsset and SkeletonRenderer (and derivatives)
-		/// If left empty and the script the attribute is applied to is derived from Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
+		/// If left empty and the script the attribute is applied to is derived From Component, GetComponent<SkeletonRenderer>() will be called as a fallback.
 		/// </param>
 		public SpineBone(string startsWith = "", string dataField = "") {
 			this.startsWith = startsWith;

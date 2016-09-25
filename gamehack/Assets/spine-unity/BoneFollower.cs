@@ -54,7 +54,7 @@ namespace Spine.Unity {
 		public bool followZPosition = true;
 		public bool followBoneRotation = true;
 
-		[Tooltip("Follows the skeleton's flip state by controlling this Transform's local scale.")]
+		[Tooltip("Follows the skeleton's flip State by controlling this Transform's local scale.")]
 		public bool followSkeletonFlip = false;
 
 		[UnityEngine.Serialization.FormerlySerializedAs("resetOnAwake")]

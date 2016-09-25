@@ -64,7 +64,7 @@ namespace Spine {
 		public String Path { get; set; }
 		public Object RendererObject { get; set; }
 		public float RegionOffsetX { get { return regionOffsetX; } set { regionOffsetX = value; } }
-		public float RegionOffsetY { get { return regionOffsetY; } set { regionOffsetY = value; } } // Pixels stripped from the bottom left, unrotated.
+		public float RegionOffsetY { get { return regionOffsetY; } set { regionOffsetY = value; } } // Pixels stripped From the bottom left, unrotated.
 		public float RegionWidth { get { return regionWidth; } set { regionWidth = value; } }
 		public float RegionHeight { get { return regionHeight; } set { regionHeight = value; } } // Unrotated, stripped size.
 		public float RegionOriginalWidth { get { return regionOriginalWidth; } set { regionOriginalWidth = value; } }

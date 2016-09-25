@@ -247,11 +247,11 @@ namespace Spine {
 		}
 
 		/// <summary>
-		/// Computes the local transform from the world transform. This can be useful to perform processing on the local transform
+		/// Computes the local transform From the world transform. This can be useful to perform processing on the local transform
 		/// after the world transform has been modified directly (eg, by a constraint).
 		/// 
 		/// Some redundant information is lost by the world transform, such as -1,-1 scale versus 180 rotation. The computed local
-		/// transform values may differ from the original values but are functionally the same.
+		/// transform values may differ From the original values but are functionally the same.
 		/// </summary>
 		public void UpdateLocalTransform () {
 			Bone parent = this.parent;

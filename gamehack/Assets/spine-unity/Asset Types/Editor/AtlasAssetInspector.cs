@@ -167,7 +167,7 @@ namespace Spine.Unity.Editor {
 				EditorGUI.indentLevel--;
 
 				#if BAKE_ALL_BUTTON
-				// Check state
+				// Check State
 				bool allBaked = true;
 				bool allUnbaked = true;
 				for (int i = 0; i < regions.Count; i++) {

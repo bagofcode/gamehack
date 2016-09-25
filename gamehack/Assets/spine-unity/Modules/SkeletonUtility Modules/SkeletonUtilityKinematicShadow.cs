@@ -34,7 +34,7 @@ using System.Collections.Generic;
 
 namespace Spine.Unity.Modules {
 	
-	// SkeletonUtilityKinematicShadow allows hinge chains to inherit a velocity interpreted from changes in parent transform position or from unrelated rigidbodies.
+	// SkeletonUtilityKinematicShadow allows hinge chains to inherit a velocity interpreted From changes in parent transform position or From unrelated rigidbodies.
 	// Note: Uncheck "useRootTransformIfNull
 	public class SkeletonUtilityKinematicShadow : MonoBehaviour {
 		#region Inspector

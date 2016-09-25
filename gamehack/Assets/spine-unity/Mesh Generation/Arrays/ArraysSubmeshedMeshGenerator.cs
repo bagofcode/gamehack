@@ -183,7 +183,7 @@ namespace Spine.Unity.MeshGeneration {
 				}
 			}
 			bool structureDoesntMatch = vertBufferResized || submeshBuffersResized || smartMesh.StructureDoesntMatch(meshInstructions);
-			// For each submesh, add vertex data from attachments. Also triangles, but only if needed.
+			// For each submesh, add vertex data From attachments. Also triangles, but only if needed.
 			int vertexIndex = 0; // modified by FillVerts
 			for (int submeshIndex = 0; submeshIndex < submeshCount; submeshIndex++) {
 				var submeshInstruction = instructionList.Items[submeshIndex];

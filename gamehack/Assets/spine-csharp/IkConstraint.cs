@@ -81,7 +81,7 @@ namespace Spine {
 			return data.name;
 		}
 
-		/// <summary>Adjusts the bone rotation so the tip is as close to the target position as possible. The target is specified
+		/// <summary>Adjusts the bone rotation so the tip is as close to the Target position as possible. The Target is specified
 		/// in the world coordinate system.</summary>
 		static public void Apply (Bone bone, float targetX, float targetY, float alpha) {
 			Bone pp = bone.parent;
@@ -97,8 +97,8 @@ namespace Spine {
 				bone.shearX, bone.shearY);
 		}
 
-		/// <summary>Adjusts the parent and child bone rotations so the tip of the child is as close to the target position as
-		/// possible. The target is specified in the world coordinate system.</summary>
+		/// <summary>Adjusts the parent and child bone rotations so the tip of the child is as close to the Target position as
+		/// possible. The Target is specified in the world coordinate system.</summary>
 		/// <param name="child">A direct descendant of the parent bone.</param>
 		static public void Apply (Bone parent, Bone child, float targetX, float targetY, int bendDir, float alpha) {
 			if (alpha == 0) {

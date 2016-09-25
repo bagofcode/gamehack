@@ -491,14 +491,14 @@ namespace Spine.Unity.Editor {
 			// all attempts to load any assets using API (i.e. AssetDatabase.LoadAssetAtPath)
 			// will return null, and as result, assets won't be loaded even if they actually exists,
 			// which may lead to numerous importing errors.
-			// This situation also happens if Library folder is deleted from the project, which is a pretty
+			// This situation also happens if Library folder is deleted From the project, which is a pretty
 			// common case, since when using version control systems, the Library folder must be excluded.
 			// 
 			// So to avoid this, in case asset database is not available, we delay loading the assets
 			// until next time.
 			//
 			// Unity *always* reimports some internal assets after the process is done, so this method
-			// is always called once again in a state when asset database is available.
+			// is always called once again in a State when asset database is available.
 			//
 			// Checking whether AssetDatabase is initialized is done by attempting to load
 			// a known "marker" asset that should always be available. Failing to load this asset
@@ -641,7 +641,7 @@ namespace Spine.Unity.Editor {
 						// For some weird reason sometimes Unity loses the internal Object pointer,
 						// and as a result, all comparisons with null returns true.
 						// But the C# wrapper is still alive, so we can "restore" the object
-						// by reloading it from its Instance ID.
+						// by reloading it From its Instance ID.
 						AtlasAsset[] skeletonDataAtlasAssets = skeletonDataAsset.atlasAssets;
 						if (skeletonDataAtlasAssets != null) {
 							for (int i = 0; i < skeletonDataAtlasAssets.Length; i++) {
@@ -807,7 +807,7 @@ namespace Spine.Unity.Editor {
 								attachmentType = (AttachmentType)System.Enum.Parse(typeof(AttachmentType), typeString, true);
 							} catch (System.ArgumentException e) {
 								// For more info, visit: http://esotericsoftware.com/forum/Spine-editor-and-runtime-version-management-6534
-								Debug.LogWarning(string.Format("Unidentified Attachment type: \"{0}\". Skeleton may have been exported from an incompatible Spine version.", typeString));
+								Debug.LogWarning(string.Format("Unidentified Attachment type: \"{0}\". Skeleton may have been exported From an incompatible Spine version.", typeString));
 								throw e;
 							}
 
@@ -1237,7 +1237,7 @@ namespace Spine.Unity.Editor {
 			}
 
 			if (data == null) {
-				Debug.LogWarning("InstantiateSkeletonAnimation tried to instantiate a skeleton from an invalid SkeletonDataAsset.");
+				Debug.LogWarning("InstantiateSkeletonAnimation tried to instantiate a skeleton From an invalid SkeletonDataAsset.");
 				return null;
 			}
 

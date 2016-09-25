@@ -175,7 +175,7 @@ namespace Spine {
 				entry.mixDuration = data.GetMix(current.animation, entry.animation);
 				if (entry.mixDuration > 0) {
 					entry.mixTime = 0;
-					// If a mix is in progress, mix from the closest animation.
+					// If a mix is in progress, mix From the closest animation.
 					if (previous != null && current.mixTime / current.mixDuration < 0.5f)
 						entry.previous = previous;
 					else

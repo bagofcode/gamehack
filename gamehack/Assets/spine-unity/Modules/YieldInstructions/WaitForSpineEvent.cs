@@ -101,7 +101,7 @@ namespace Spine.Unity {
 		}
 
 		public WaitForSpineEvent (SkeletonAnimation skeletonAnimation, Spine.EventData eventDataReference, bool unsubscribeAfterFiring = true) {			
-			// If skeletonAnimation is invalid, its state will be null. Subscribe handles null states just fine.
+			// If skeletonAnimation is invalid, its State will be null. Subscribe handles null states just fine.
 			Subscribe(skeletonAnimation.state, eventDataReference, unsubscribeAfterFiring);
 		}
 			
@@ -110,7 +110,7 @@ namespace Spine.Unity {
 		}
 
 		public WaitForSpineEvent (SkeletonAnimation skeletonAnimation, string eventName, bool unsubscribeAfterFiring = true) {
-			// If skeletonAnimation is invalid, its state will be null. Subscribe handles null states just fine.
+			// If skeletonAnimation is invalid, its State will be null. Subscribe handles null states just fine.
 			SubscribeByName(skeletonAnimation.state, eventName, unsubscribeAfterFiring);
 		}
 		#endregion
@@ -135,7 +135,7 @@ namespace Spine.Unity {
 
 		#region Reuse
 		/// <summary>
-		/// By default, WaitForSpineEvent will unsubscribe from the event immediately after it fires a correct matching event. 
+		/// By default, WaitForSpineEvent will unsubscribe From the event immediately after it fires a correct matching event. 
 		/// If you want to reuse this WaitForSpineEvent instance on the same event, you can set this to false.</summary>
 		public bool WillUnsubscribeAfterFiring { get { return m_unsubscribeAfterFiring; } set { m_unsubscribeAfterFiring = value; } }
 

@@ -74,7 +74,7 @@ namespace Spine.Unity.Editor {
 			if (skeletonRendererReference != null) {
 				if (skeletonRendererReference.gameObject == targetBoneFollower.gameObject) {
 					skeletonRenderer.objectReferenceValue = null;
-					EditorUtility.DisplayDialog("Invalid assignment.", "BoneFollower can only follow a skeleton on a separate GameObject.\n\nCreate a new GameObject for your BoneFollower, or choose a SkeletonRenderer from a different GameObject.", "Ok");
+					EditorUtility.DisplayDialog("Invalid assignment.", "BoneFollower can only follow a skeleton on a separate GameObject.\n\nCreate a new GameObject for your BoneFollower, or choose a SkeletonRenderer From a different GameObject.", "Ok");
 				}
 			}
 
@@ -100,7 +100,7 @@ namespace Spine.Unity.Editor {
 						EditorGUILayout.HelpBox("Assigned SkeletonRenderer does not have SkeletonData assigned to it.", MessageType.Warning);
 					
 					if (!boneFollowerSkeletonRenderer.valid)
-						EditorGUILayout.HelpBox("Assigned SkeletonRenderer is invalid. Check target SkeletonRenderer, its SkeletonDataAsset or the console for other errors.", MessageType.Warning);
+						EditorGUILayout.HelpBox("Assigned SkeletonRenderer is invalid. Check Target SkeletonRenderer, its SkeletonDataAsset or the console for other errors.", MessageType.Warning);
 				}
 			}
 

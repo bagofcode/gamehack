@@ -80,7 +80,7 @@ namespace Spine.Unity.Editor {
 				follower.attachmentNameTable.Clear();
 				EditorGUILayout.HelpBox("BoundingBoxAttachments cannot be previewed in prefabs.", MessageType.Info);
 
-				// How do you prevent components from being saved into the prefab? No such HideFlag. DontSaveInEditor | DontSaveInBuild does not work. DestroyImmediate does not work.
+				// How do you prevent components From being saved into the prefab? No such HideFlag. DontSaveInEditor | DontSaveInBuild does not work. DestroyImmediate does not work.
 				var collider = follower.GetComponent<PolygonCollider2D>();
 				if (collider != null) Debug.LogWarning("Found BoundingBoxFollower collider components in prefab. These are disposed and regenerated at runtime.");
 

@@ -108,8 +108,8 @@ namespace Spine.Unity {
 			}
 		}
 
-		/// <summary>Whether or not an animation should loop. This only applies to the initial animation specified in the inspector, or any subsequent Animations played through .AnimationName. Animations set through state.SetAnimation are unaffected.</summary>
-		[Tooltip("Whether or not an animation should loop. This only applies to the initial animation specified in the inspector, or any subsequent Animations played through .AnimationName. Animations set through state.SetAnimation are unaffected.")]
+		/// <summary>Whether or not an animation should loop. This only applies to the initial animation specified in the inspector, or any subsequent Animations played through .AnimationName. Animations set through State.SetAnimation are unaffected.</summary>
+		[Tooltip("Whether or not an animation should loop. This only applies to the initial animation specified in the inspector, or any subsequent Animations played through .AnimationName. Animations set through State.SetAnimation are unaffected.")]
 		public bool loop;
 
 		/// <summary>
@@ -157,7 +157,7 @@ namespace Spine.Unity {
 			}
 			#else
 			if (!string.IsNullOrEmpty(_animationName)) {
-				state.SetAnimation(0, _animationName, loop);
+				State.SetAnimation(0, _animationName, loop);
 				Update(0);
 			}
 			#endif

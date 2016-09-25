@@ -54,13 +54,13 @@ namespace Spine.Unity.Modules {
 		public bool useRadius = false;
 		[Tooltip("The Radius")]
 		public float castRadius = 0.1f;
-		[Tooltip("How high above the target bone to begin casting from")]
+		[Tooltip("How high above the Target bone to begin casting From")]
 		public float castDistance = 5f;
 		[Tooltip("X-Axis adjustment")]
 		public float castOffset = 0;
 		[Tooltip("Y-Axis adjustment")]
 		public float groundOffset = 0;
-		[Tooltip("How fast the target IK position adjusts to the ground.  Use smaller values to prevent snapping")]
+		[Tooltip("How fast the Target IK position adjusts to the ground.  Use smaller values to prevent snapping")]
 		public float adjustSpeed = 5;
 		#endif
 

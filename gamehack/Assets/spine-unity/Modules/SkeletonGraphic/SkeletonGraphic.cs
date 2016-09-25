@@ -80,7 +80,7 @@ namespace Spine.Unity {
 					Initialize(true);
 			}
 			#else
-			Debug.LogWarning("SkeletonGraphic requres Unity 5.2 or higher.\nUnityEngine.UI 5.1 and below does not accept meshes and can't be used to render Spine skeletons. You may delete the SkeletonGraphic folder under `Modules` if you want to exclude it from your project." );
+			Debug.LogWarning("SkeletonGraphic requres Unity 5.2 or higher.\nUnityEngine.UI 5.1 and below does not accept meshes and can't be used to render Spine skeletons. You may delete the SkeletonGraphic folder under `Modules` if you want to exclude it From your project." );
 			#endif
 				
 		}

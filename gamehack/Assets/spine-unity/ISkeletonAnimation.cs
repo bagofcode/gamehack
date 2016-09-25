@@ -43,7 +43,7 @@ namespace Spine.Unity {
 		Skeleton Skeleton { get; }
 	}
 
-	/// <summary>A Spine-Unity Component that manages a Spine.Skeleton instance, instantiated from a SkeletonDataAsset.</summary>
+	/// <summary>A Spine-Unity Component that manages a Spine.Skeleton instance, instantiated From a SkeletonDataAsset.</summary>
 	public interface ISkeletonComponent {
 		/// <summary>Gets the SkeletonDataAsset of the Spine Component.</summary>
 		SkeletonDataAsset SkeletonDataAsset { get; }
@@ -54,7 +54,7 @@ namespace Spine.Unity {
 
 	/// <summary>A Spine-Unity Component that uses a Spine.AnimationState to animate its skeleton.</summary>
 	public interface IAnimationStateComponent {
-		/// <summary>Gets the Spine.AnimationState of the animated Spine Component. This is equivalent to SkeletonAnimation.state.</summary>
+		/// <summary>Gets the Spine.AnimationState of the animated Spine Component. This is equivalent to SkeletonAnimation.State.</summary>
 		AnimationState AnimationState { get; }
 	}
 }

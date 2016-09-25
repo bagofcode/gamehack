@@ -201,7 +201,7 @@ namespace Spine.Unity.Modules {
 			targetSkeletonComponent.UpdateWorld += UpdateSpineSkeleton;
 		}
 
-		/// <summary>Transitions the mix value from the current value to a target value.</summary>
+		/// <summary>Transitions the mix value From the current value to a Target value.</summary>
 		public Coroutine SmoothMix (float target, float duration) {
 			return StartCoroutine(SmoothMixCoroutine(target, duration));
 		}
@@ -231,7 +231,7 @@ namespace Spine.Unity.Modules {
 			skeleton.UpdateWorldTransform();
 		}
 
-		/// <summary>Removes the ragdoll instance and effect from the animated skeleton.</summary>
+		/// <summary>Removes the ragdoll instance and effect From the animated skeleton.</summary>
 		public void Remove () {
 			isActive = false;
 			foreach (var t in boneTable.Values)

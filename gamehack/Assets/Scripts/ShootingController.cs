@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts.Util;
 
 public class ShootingController : MonoBehaviour
 {
@@ -8,11 +9,10 @@ public class ShootingController : MonoBehaviour
 
     public void Fire(Vector2 direction)
     {
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        var rotation = QuaternionUtil.FromDirection2D(direction);
 
-        var bulletInstance = (GameObject)Instantiate(bullet, origin.position, rotation);
-        bulletInstance.GetComponent<Rigidbody2D>().velocity = direction.normalized * 20;
+        var bulletInstance = (GameObject) Instantiate(bullet, origin.position, rotation);
+        bulletInstance.GetComponent<Rigidbody2D>().velocity = direction.normalized*20;
         bulletInstance.GetComponent<BulletController>().ignore = this.gameObject;
     }
 }

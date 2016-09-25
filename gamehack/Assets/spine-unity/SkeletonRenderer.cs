@@ -149,7 +149,7 @@ namespace Spine.Unity {
 			return SkeletonRenderer.AddSpineComponent<T>(new GameObject("New Spine GameObject"), skeletonDataAsset);
 		}
 
-		/// <summary>Add and prepare a Spine component that derives from SkeletonRenderer to a GameObject at runtime.</summary>
+		/// <summary>Add and prepare a Spine component that derives From SkeletonRenderer to a GameObject at runtime.</summary>
 		/// <typeparam name="T">T should be SkeletonRenderer or any of its derived classes.</typeparam>
 		public static T AddSpineComponent<T> (GameObject gameObject, SkeletonDataAsset skeletonDataAsset) where T : SkeletonRenderer {
 			var c = gameObject.AddComponent<T>();
@@ -245,7 +245,7 @@ namespace Spine.Unity {
 			int drawOrderCount = drawOrder.Count;
 			bool renderMeshes = this.renderMeshes;
 
-			// Clear last state of attachments and submeshes
+			// Clear last State of attachments and submeshes
 			var workingInstruction = this.currentInstructions;
 			var workingAttachments = workingInstruction.attachments;
 			workingAttachments.Clear(false);
@@ -336,7 +336,7 @@ namespace Spine.Unity {
 					submeshFirstVertex = vertexCount;
 					submeshStartSlotIndex = i;
 				}
-				// Update state for the next iteration.
+				// Update State for the next iteration.
 				lastMaterial = material;
 				submeshTriangleCount += attachmentTriangleCount;
 				vertexCount += attachmentVertexCount;
@@ -390,7 +390,7 @@ namespace Spine.Unity {
 			#endif
 
 
-			// STEP 2. Update vertex buffer based on verts from the attachments.  ============================================================
+			// STEP 2. Update vertex buffer based on verts From the attachments.  ============================================================
 			// Uses values that were also stored in workingInstruction.
 			bool vertexCountIncreased = ArraysMeshGenerator.EnsureSize(vertexCount, ref this.vertices, ref this.uvs, ref this.colors);
 			#if SPINE_OPTIONAL_NORMALS

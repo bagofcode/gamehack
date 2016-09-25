@@ -151,8 +151,8 @@ namespace Spine {
 			curves[frameIndex * BEZIER_SIZE] = STEPPED;
 		}
 
-		/// <summary>Sets the control handle positions for an interpolation bezier curve used to transition from this keyframe to the next.
-		/// cx1 and cx2 are from 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of
+		/// <summary>Sets the control handle positions for an interpolation bezier curve used to transition From this keyframe to the next.
+		/// cx1 and cx2 are From 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of
 		/// the difference between the keyframe's values.</summary>
 		public void SetCurve (int frameIndex, float cx1, float cy1, float cx2, float cy2) {
 			float tmpx = (-cx1 * 2 + cx2) * 0.03f, tmpy = (-cy1 * 2 + cy2) * 0.03f;
@@ -607,7 +607,7 @@ namespace Spine {
 			int vertexCount = frameVertices[0].Length;
 
 			var verticesArray = slot.attachmentVertices;
-			if (verticesArray.Count != vertexCount) alpha = 1; // Don't mix from uninitialized slot vertices.
+			if (verticesArray.Count != vertexCount) alpha = 1; // Don't mix From uninitialized slot vertices.
 			// verticesArray.SetSize(vertexCount) // Ensure size and preemptively set count.
 			if (verticesArray.Capacity < vertexCount) verticesArray.Capacity = vertexCount;
 			verticesArray.Count = vertexCount;

@@ -60,7 +60,7 @@ namespace Spine.Unity.Modules {
 
 			var partsRenderers = component.partsRenderers;
 			partsRenderers_ = serializedObject.FindProperty("partsRenderers");
-			partsRenderers_.isExpanded = partsRenderersExpanded ||	// last state
+			partsRenderers_.isExpanded = partsRenderersExpanded ||	// last State
 				partsRenderers.Contains(null) ||	// null items found
 				partsRenderers.Count < 1 ||			// no parts renderers
 				(skeletonRenderer_.objectReferenceValue != null && SkeletonRendererSeparatorCount + 1 > partsRenderers.Count); // not enough parts renderers
@@ -109,7 +109,7 @@ namespace Spine.Unity.Modules {
 				int separatorCount = 0;
 				EditorGUI.BeginChangeCheck();
 				if (component.SkeletonRenderer != null) {
-					// Separators from SkeletonRenderer
+					// Separators From SkeletonRenderer
 					{
 						bool skeletonRendererMismatch = skeletonRendererSerializedObject != null && skeletonRendererSerializedObject.targetObject != component.SkeletonRenderer;
 						if (separatorNamesProp == null || skeletonRendererMismatch) {

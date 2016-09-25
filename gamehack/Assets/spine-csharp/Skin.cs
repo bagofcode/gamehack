@@ -75,7 +75,7 @@ namespace Spine {
 			return name;
 		}
 
-		/// <summary>Attach all attachments from this skin if the corresponding attachment from the old skin is currently attached.</summary>
+		/// <summary>Attach all attachments From this skin if the corresponding attachment From the old skin is currently attached.</summary>
 		internal void AttachAll (Skeleton skeleton, Skin oldSkin) {
 			foreach (KeyValuePair<AttachmentKeyTuple, Attachment> entry in oldSkin.attachments) {
 				int slotIndex = entry.Key.slotIndex;
