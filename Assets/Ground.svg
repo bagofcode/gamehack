@@ -29,13 +29,14 @@
      inkscape:cx="824.16693"
      inkscape:cy="610.19992"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer12"
      showgrid="true"
      inkscape:window-width="2440"
      inkscape:window-height="1652"
      inkscape:window-x="-9"
      inkscape:window-y="1"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     showguides="false">
     <inkscape:grid
        type="xygrid"
        id="grid6222" />
@@ -87,140 +88,5 @@
   <g
      inkscape:groupmode="layer"
      id="layer12"
-     inkscape:label="Player">
-    <g
-       id="g6154"
-       transform="translate(-26.806658,-60.404652)">
-      <g
-         style="display:inline"
-         id="layer1-0"
-         inkscape:label="head">
-        <circle
-           r="62.5"
-           cy="297.71936"
-           cx="388.92856"
-           id="path4684"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="eyes"
-         id="layer2">
-        <ellipse
-           ry="8.5714283"
-           rx="14.642857"
-           cy="282.36221"
-           cx="395.35718"
-           id="path4693"
-           style="fill:#ffffff;fill-opacity:1" />
-        <ellipse
-           ry="8.5714283"
-           rx="14.642857"
-           cy="281.64792"
-           cx="431.42856"
-           id="path4693-2"
-           style="fill:#ffffff;fill-opacity:1" />
-        <path
-           sodipodi:nodetypes="cccc"
-           inkscape:connector-curvature="0"
-           id="path4725"
-           d="m 397.48731,328.37979 6.78572,-3.57143 17.32142,0 6.42857,3.21429"
-           style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="torso"
-         id="layer3">
-        <path
-           inkscape:connector-curvature="0"
-           id="path4753"
-           d="m 387.14286,506.64792 0,-146.42857"
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="left leg"
-         id="layer7">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4733"
-           d="m 389.91888,508.6476 79.54952,79.54951"
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         inkscape:label="left calf"
-         id="layer11">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4733-0"
-           d="m 469.4684,588.19711 0,76.2665"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="right leg"
-         id="layer6">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4733-6"
-           d="m 385.84697,508.6476 -79.54952,79.54951"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         inkscape:label="right calf"
-         id="layer10">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path4733-6-2"
-           d="m 306.29745,588.19711 0,76.26649"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="right arm"
-         id="layer5">
-        <path
-           sodipodi:nodetypes="cc"
-           inkscape:connector-curvature="0"
-           id="path4776-9"
-           d="m 385.66492,400.21935 -85.03411,-0.11036"
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-      <g
-         inkscape:label="right hand"
-         id="layer9">
-        <path
-           sodipodi:nodetypes="cc"
-           inkscape:connector-curvature="0"
-           id="path4776-9-3"
-           d="M 300.43445,400.13022 266.22097,325.91674"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-      <g
-         style="display:inline"
-         inkscape:label="left arm"
-         id="layer4">
-        <path
-           sodipodi:nodetypes="cc"
-           inkscape:connector-curvature="0"
-           id="path4776-8"
-           d="m 385.91753,399.78319 81.46268,47.0325"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-      <g
-         inkscape:label="left hand"
-         id="layer8">
-        <path
-           sodipodi:nodetypes="cc"
-           inkscape:connector-curvature="0"
-           id="path4776"
-           d="M 467.71268,446.71614 524.7833,389.64551"
-           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
-    </g>
-  </g>
+     inkscape:label="Player" />
 </svg>
